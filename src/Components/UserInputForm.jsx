@@ -72,19 +72,30 @@ export default function UserInputForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      // Construct the query parameters from formData
       const queryParams = new URLSearchParams(formData).toString();
       const apiURL = `https://4f9e-2400-4f20-11-500-ad1c-7184-1ed8-ab13.ngrok-free.app/recommend?${queryParams}`;
-      
+  
       try {
-        const response = await fetch(apiURL);
+        const response = await fetch(apiURL, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'ngrok-skip-browser-warning': 'true', // Ensure this bypasses the warning
+          },
+        });
+  
+        if (!response.ok) {
+          const text = await response.text(); // Get raw response for debugging
+          console.log("Raw Response:", text); // Log the HTML or error
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+  
         const data = await response.json();
-        
-        // Navigate to the Results page with the API data
+        console.log("API Response:", data);
         navigate("/results", { state: { apiResponse: data } });
       } catch (error) {
-        console.error("Error fetching API:", error);
-        alert("There was an error processing your request.");
+        console.error("Error fetching API:", error.message, error.stack);
+        alert("There was an error processing your request. Check the console for details.");
       }
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });
