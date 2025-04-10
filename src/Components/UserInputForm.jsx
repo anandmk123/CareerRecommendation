@@ -74,7 +74,7 @@ export default function UserInputForm() {
     if (validate()) {
       // Construct the query parameters from formData
       const queryParams = new URLSearchParams(formData).toString();
-      const apiURL = `http://127.0.0.1:5000/recommend?${queryParams}`;
+      const apiURL = `https://4f9e-2400-4f20-11-500-ad1c-7184-1ed8-ab13.ngrok-free.app/recommend?${queryParams}`;
       
       try {
         const response = await fetch(apiURL);
