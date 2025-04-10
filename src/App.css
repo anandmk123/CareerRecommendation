@@ -1,0 +1,11 @@
+@import "tailwindcss";
+/* Prevent horizontal overflow */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Ensure all elements stay within bounds */
+  * {
+    box-sizing: border-box;
+  }
