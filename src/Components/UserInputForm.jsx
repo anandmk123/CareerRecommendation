@@ -73,13 +73,14 @@ export default function UserInputForm() {
     e.preventDefault();
     if (validate()) {
       const queryParams = new URLSearchParams(formData).toString();
-      const apiURL = `https://4f9e-2400-4f20-11-500-ad1c-7184-1ed8-ab13.ngrok-free.app/recommend?${queryParams}`;
+      const apiURL = `https://anandmkunni1999.loca.lt/recommend?${queryParams}`;
   
       try {
         const response = await fetch(apiURL, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
+            'bypass-tunnel-reminder': 'true', // Add this header
             'ngrok-skip-browser-warning': 'true', // Ensure this bypasses the warning
           },
         });
