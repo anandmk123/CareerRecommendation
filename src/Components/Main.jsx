@@ -24,7 +24,6 @@ function Main() {
         <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto mt-4 sm:mt-6 mb-8 sm:mb-10 leading-relaxed bg-white p-4 sm:p-6 rounded-xl shadow-lg">
         Designed exclusively for <strong className="text-blue-600">10th-grade students</strong>, our system leverages advanced 
         <span className="text-blue-500 font-semibold"> Fuzzy Logic</span> and has been <strong className="text-green-600">validated by career counselors</strong>.  
-        It provides tailored career guidance by analyzing:
         </p>
 
         {/* Key Features */}
@@ -42,12 +41,6 @@ function Main() {
             <strong>Consideration of academic performance, personality, and extracurriculars</strong>
         </li>
         </ul>
-
-        {/* Closing Statement */}
-        <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-3xl mx-auto mt-4 sm:mt-6 px-4">
-        Instead of predicting a single career, we provide a list of <strong className="text-blue-600">career groups </strong>  
-        tailored to students' strengths, ensuring flexibility and better decision-making for a bright future.
-        </p> 
 
 
         {/* Career Groups */}

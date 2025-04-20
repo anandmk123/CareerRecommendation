@@ -59,7 +59,7 @@ export default function Results() {
           stage: "After 12th",
           steps: [
             "Appear for JEE Main (January & April) and JEE Advanced (for IITs)",
-            "Other entrance exams: BITSAT, VITEEE, SRMJEEE, etc.",
+            "Other entrance exams: BITSAT, VITEEE, etc.",
             "Pursue B.Tech/B.E (4 years) or Integrated M.Tech (5 years)"
           ]
         },
@@ -75,9 +75,12 @@ export default function Results() {
           stage: "Career Options",
           steps: [
             "Software Engineer, Mechanical Engineer, Civil Engineer, etc.",
+            "Electrical Engineer, Electronics Engineer",
             "Research Scientist, Technical Consultant",
+            "AI/ML Engineer, Data Analyst",
             "Higher studies leading to PhD"
           ]
+          
         }
       ],
       exams: [
@@ -109,16 +112,18 @@ export default function Results() {
           steps: [
             "NEET PG for MD/MS admissions",
             "FMGE for foreign medical graduates",
-            "Super-specialization through DM/MCh"
           ]
         },
         {
           stage: "Career Options",
           steps: [
             "Doctor, Surgeon, Physician",
+            "Dentist, Pharmacist, Nurse",
+            "Physiotherapist, Occupational Therapist",
             "Medical Researcher, Public Health Specialist",
-            "Hospital Administrator, Healthcare Consultant"
+            "Lab Technician, Radiologist, Paramedic"
           ]
+          
         }
       ],
       exams: [
@@ -143,13 +148,13 @@ export default function Results() {
           steps: [
             "Appear for CUET, IPMAT (for integrated MBA)",
             "Pursue B.Com, BBA, BMS (3 years)",
-            "Professional courses: CA, CS, CMA foundation"
+            "Professional courses: CA, CMA foundation"
           ]
         },
         {
           stage: "Higher Education",
           steps: [
-            "CAT (November), XAT, MAT, CMAT for MBA",
+            "CAT (November), MAT, CMAT for MBA",
             "Specializations: Finance, Marketing, HR, Operations",
             "Global options: GMAT for international business schools"
           ]
@@ -165,9 +170,9 @@ export default function Results() {
       ],
       exams: [
         { name: "CAT", frequency: "Once yearly (Nov)" },
-        { name: "XAT", frequency: "Once yearly (Jan)" },
         { name: "MAT", frequency: "Multiple times yearly" },
-        { name: "CA Foundation", frequency: "Twice yearly" }
+        { name: "CA Foundation", frequency: "Twice yearly" },
+        { name: "CMAT", frequency: "Once yearly" },
       ]
     },
     "Creative Arts and Design": {
@@ -202,7 +207,9 @@ export default function Results() {
           steps: [
             "Graphic Designer, Animator, Art Director",
             "Fashion Designer, Interior Designer",
-            "Creative Director, Multimedia Artist"
+            "Creative Director, Multimedia Artist",
+            "Visual Effects (VFX) Artist, Film Director, Writer",
+            "Photographer, UX/UI Designer"
           ]
         }
       ],
